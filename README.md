@@ -2,12 +2,12 @@
 
 A real-time voting system where users can create a poll and other users can cast their votes. The system generates a ranking among the options and updates the votes in real-time.
 
-#### Requisites
+## Requisites
 
 - Docker
 - Node.js
 
-#### Setup
+## Setup
 
 1. **Clone the repository**
 2. **Install dependencies**(`npm install`)
@@ -16,13 +16,13 @@ A real-time voting system where users can create a poll and other users can cast
 5. **Run application** (`npm run dev`);
 6. **Test it! (I personally recommend testing with [Hoppscotch](https://hoppscotch.io/))**
 
-#### HTTP
+## HTTP
 
 Create a new poll.
 
 POST `/polls`
 
-## Request body
+#### Request body
 
 ```json
 {
@@ -31,7 +31,7 @@ POST `/polls`
 }
 ```
 
-## Response body
+#### Response body
 
 ```json
 {
@@ -43,7 +43,7 @@ GET `/polls/:pollId`
 
 Return data from a single poll.
 
-## Response body
+#### Response body
 
 ```json
 {
@@ -80,7 +80,7 @@ POST `/polls/:pollId/votes`
 
 Add a vote to specific poll.
 
-## Request body
+#### Request body
 
 ```json
 {
@@ -88,11 +88,11 @@ Add a vote to specific poll.
 }
 ```
 
-#### WebSockets
+## WebSockets
 
 ws `/polls/:pollId/results`
 
-## Message
+#### Message
 
 ```json
 {
